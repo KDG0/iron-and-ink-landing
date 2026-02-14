@@ -34,7 +34,7 @@ No build tools or dependencies required.
 
 ```bash
 # Clone the repository
-git clone https://github.com/kevinguifarro/iron-and-ink-landing.git
+git clone https://github.com/KDG0/iron-and-ink-landing.git
 
 # Open in your browser
 cd iron-and-ink-landing
