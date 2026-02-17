@@ -1946,5 +1946,80 @@
     })();
   </script>
 
+  <!-- N8N AI Chat Widget - Iron & Ink Virtual Assistant -->
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+    createChat({
+      webhookUrl: 'https://guifarrodev.app.n8n.cloud/webhook/4f1012bd-0471-42b8-9b7f-f32427397fc8/chat',
+      initialMessages: [
+        'Hi there! 👋 Welcome to Iron & Ink Tattoo Studio.',
+        'I\'m the studio\'s virtual assistant. How can I help you? I can provide information about pricing, artists, hours, and more.'
+      ],
+      i18n: {
+        en: {
+          title: 'Iron & Ink Assistant',
+          subtitle: 'Ask me anything about the studio!',
+          inputPlaceholder: 'Type your question...',
+          getStarted: 'New Conversation',
+          closeButtonTooltip: 'Close chat',
+        },
+      },
+      theme: {
+        button: {
+          backgroundColor: '#C9A96E',
+          iconColor: '#000000',
+          size: 'large',
+        },
+        chatWindow: {
+          backgroundColor: '#1a1a1a',
+          title: {
+            color: '#C9A96E',
+          },
+          subtitle: {
+            color: '#999999',
+          },
+          userMessage: {
+            backgroundColor: '#C9A96E',
+            color: '#000000',
+          },
+          botMessage: {
+            backgroundColor: '#2a2a2a',
+            color: '#ffffff',
+          },
+          input: {
+            backgroundColor: '#2a2a2a',
+            color: '#ffffff',
+            placeholderColor: '#666666',
+          },
+        },
+      },
+    });
+  </script>
+  <style>
+    /* Custom overrides for n8n chat to match Iron & Ink dark theme */
+    :root {
+      --chat--color-primary: #C9A96E;
+      --chat--color-primary-shade-50: #b8954f;
+      --chat--color-primary-shade-100: #a6833a;
+      --chat--color-secondary: #1a1a1a;
+      --chat--color-secondary-shade-25: #2a2a2a;
+      --chat--color-white: #ffffff;
+      --chat--toggle--background: #C9A96E;
+      --chat--toggle--hover--background: #b8954f;
+      --chat--toggle--active--background: #a6833a;
+      --chat--window--background: #1a1a1a;
+      --chat--header--background: #111111;
+      --chat--header--color: #C9A96E;
+      --chat--message--bot--background: #2a2a2a;
+      --chat--message--bot--color: #ffffff;
+      --chat--message--user--background: #C9A96E;
+      --chat--message--user--color: #000000;
+      --chat--input--background: #2a2a2a;
+      --chat--input--color: #ffffff;
+      --chat--input--border: #333333;
+    }
+  </style>
+
 </body>
 </html>
