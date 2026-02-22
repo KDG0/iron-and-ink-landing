@@ -73,6 +73,19 @@ iron-and-ink-landing/
 6. **Booking CTA** — Contact details and consultation CTA
 7. **Footer** — Organized link columns, social media, legal
 
+## 🤖 AI Virtual Assistant
+
+This landing page includes an embedded AI chatbot powered by a **RAG (Retrieval-Augmented Generation)** pipeline. The assistant can answer questions about the studio's services, pricing, artists, hours, and more — all based on real business data.
+
+### How it works:
+
+1. Customer messages are processed by an **AI Agent** running on **N8N**
+2. The agent searches a **vector knowledge base** for relevant business information
+3. **Claude (Anthropic)** generates natural, accurate responses using the retrieved context
+4. Responses are delivered in real-time through an embedded **chat widget**
+
+**Built with:** N8N · Claude API (Anthropic) · OpenAI Embeddings · Vector Store · Custom CSS theming
+
 ## Author
 
 **Kevin Guifarro**
